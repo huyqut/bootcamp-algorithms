@@ -1,6 +1,7 @@
-from sorting.quick_sort import quick_sort
-import tests.sorting.base_sort
 from typing import List
+
+import tests.sorting.base_sort
+from main.sorting.quick_sort import quick_sort
 
 
 class QuickSortTest(tests.sorting.base_sort.BaseSort):
