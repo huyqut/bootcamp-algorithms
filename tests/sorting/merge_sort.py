@@ -3,7 +3,7 @@ import tests.sorting.base_sort
 from typing import List
 
 
-class QuickSortTest(tests.sorting.base_sort.BaseSort):
+class MergeSortTest(tests.sorting.base_sort.BaseSort):
 
     def sort(self, numbers: List[int]) -> List[int]:
         return merge_sort(numbers)
