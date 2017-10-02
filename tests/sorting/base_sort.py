@@ -1,13 +1,14 @@
 import unittest
-from typing import List, Dict
+from typing import List, Dict, Callable
 from tests.sorting import sort_cases
 from tests.sorting.sort_params import *
 
 
 class BaseSort(unittest.TestCase):
 
-    def sort(self, numbers: List[int]) -> List[int]:
-        pass
+    @classmethod
+    def setUpClass(cls):
+        cls.sort: Callable[[List[int]], List[int]] = None
 
     def baseAssert(self, test_case: Dict[str, List[int]]):
         actual = self.sort(test_case[INPUT])

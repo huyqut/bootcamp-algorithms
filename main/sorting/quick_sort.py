@@ -1,8 +1,9 @@
 from typing import List
 
 
-def quick_sort(numbers: List[int]) -> None:
+def quick_sort(numbers: List[int]) -> List[int]:
     quick_divide(numbers, 0, len(numbers))
+    return numbers
 
 
 def partition(numbers: List[int], begin: int, end: int) -> int:

@@ -1,12 +1,13 @@
 from typing import List
 
 
-def heap_sort(numbers: List[int]) -> None:
+def heap_sort(numbers: List[int]) -> List[int]:
     heapify(numbers)
 
     for end in reversed(range(1, len(numbers))):
         numbers[0], numbers[end] = numbers[end], numbers[0]
         sift_down(numbers, 0, end)
+    return numbers
 
 
 def heapify(numbers: List[int]) -> None:
