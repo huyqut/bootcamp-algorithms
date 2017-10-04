@@ -1,5 +1,4 @@
 import unittest
-import sys
 from main.dynapro.bionomial_coefficient import *
 
 
